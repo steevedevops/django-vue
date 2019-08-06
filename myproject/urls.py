@@ -15,8 +15,8 @@ favicon_view = RedirectView.as_view(url=os.path.join(settings.STATIC_URL,'favico
 urlpatterns = [
     path('favicon.ico', favicon_view),
     path('', TemplateView.as_view(template_name='index.html')),
-    path('about/', TemplateView.as_view(template_name='index.html')),    
-    url(r'^graphql', csrf_exempt(GraphQLView.as_view(graphiql=True))),    
+    path('about/', TemplateView.as_view(template_name='index.html')),
+    url('graphql', csrf_exempt(GraphQLView.as_view(graphiql=True))),
     path('admin/', admin.site.urls),
 
     #DJANGO folders

@@ -80,7 +80,7 @@ export default {
   methods: {
     async create_task() {
       const name = this.name
-      const description = this.description 
+      const description = this.description
 
       // Call to the graphql mutation
       let data = await this.$apollo.mutate({
@@ -106,7 +106,7 @@ export default {
     //           id: -1,
     //           isDone: false,
     //           name: name,
-    //           description: description                 
+    //           description: description
     //         },
     //         ok: false
     //       }
@@ -117,7 +117,7 @@ export default {
       this.name = ''
       this.description = ''
     },
-    
+
     async update_task(i) {
       await this.$apollo.mutate({
         mutation: TaskUpdate,
@@ -127,7 +127,12 @@ export default {
         },
       })
     },
-  
+
   }
 }
 </script>
+
+
+<style lang="scss">
+  // @import '../assets/css/style.scss';
+</style>

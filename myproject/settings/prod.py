@@ -21,4 +21,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-VUE_ROOT = os.path.join(BASE_DIR, "frontend\\dist\\")
+VUE_ROOT = os.path.join(BASE_DIR, "frontend/dist")

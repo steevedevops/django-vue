@@ -1,5 +1,4 @@
 #!/bin/bash
-pipenv shell
 
 case $1 in
   dev)
@@ -7,7 +6,7 @@ case $1 in
     ;;
   prod)
   	python manage.py collectstatic --noinput
-    python manage.py makemigrations    
+    python manage.py makemigrations
     python manage.py migrate
     python manage.py runserver --settings=myproject.settings.prod
     ;;
